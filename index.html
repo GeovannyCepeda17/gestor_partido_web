@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partit - Gestor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Control del partit de "EL CLÁSICO"</h1>
+        <p>Barcelona vs Real Madrid</p>
+    </header>
+
+    <main>
+
+        <section id="marcador">
+            <div class="equip casa">
+                <h2>Nosaltres (Barcelona)</h2>
+                <p class="punts" id="nosaltres">0</p>
+                <div class="botons">
+                    <button class="suma" data-punts="1">+1</button>
+                    <button class="suma" data-punts="2">+2</button>
+                    <button class="suma" data-punts="3">+3</button>
+                </div>
+            </div>
+
+            <div class="equip fora">
+                <h2>Contrari (Real Madrid)</h2>
+                <p class="punts" id="contrari">0</p>
+                <div class="botons">
+                    <button class="suma" data-punts="1">+1</button>
+                    <button class="suma" data-punts="2">+2</button>
+                    <button class="suma" data-punts="3">+3</button>
+                </div>
+            </div>
+        </section>
+
+            <button id="reset">Posar a 0 tot</button>
+        </div>
+
+        <p id="missatge" aria-live="polite">El partit acaba de començar...</p>
+
+        <section>
+            <h2>Jugadors</h2>
+
+            <form id="afegir">
+                <label for="nom" class="sr-only">Nom del jugador</label>
+                <input type="text" id="nom" placeholder="Escriu nom..." required>
+                <button type="submit">Afegir</button>
+            </form>
+
+            <ul id="llista"></ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Geovanny Cepeda LLivi - 1ASIX A - 25/26 - Llenguatge de Marques</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
